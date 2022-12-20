@@ -14,7 +14,7 @@ Introduction
 
 ## Introduction <a name = "Introduction"></a>
 
-Optical score recognition (OMR) provides an intelligent and efficient way for paper score digitalization, which can be widely used in the field of assisting music teaching, music search, music secondary creation, and so on. we propose a transformer-based approach with excellent global perceptual capability for endto-end polyphonic OMR, called TrOMR.  Extensive experiments demonstrate that TrOMR outperforms current OMR methods, especially in real-world scenarios.
+Optical score recognition (OMR) provides an intelligent and efficient way for paper score digitalization, which can be widely used in the field of assisting music teaching, music search, music secondary creation, and so on. we propose a transformer-based approach with excellent global perceptual capability for end-to-end polyphonic OMR, called TrOMR.  Extensive experiments demonstrate that TrOMR outperforms current OMR methods, especially in real-world scenarios.
 
 <div align="center">
   <a href="" rel="noopener">
