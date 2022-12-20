@@ -1,0 +1,68 @@
+#*************************************************
+#****************datasets args********************
+#*************************************************
+filepaths:
+  checkpoint: checkpoints/img2score_epoch47.pth
+  lifttokenizer: tokenizers/tokenizer_lift.json
+  pitchtokenizer: tokenizers/tokenizer_pitch.json
+  rhythmtokenizer: tokenizers/tokenizer_rhythm.json
+  notetokenizer: tokenizers/tokenizer_note.json
+
+channels: 1
+patch_size: 16
+max_height: 128
+max_width: 1280
+max_seq_len: 256
+
+pad_token: 0
+bos_token: 1
+eos_token: 2
+nonote_token: 0
+
+num_rhythmtoken: 260
+noteindexes:
+- 129
+- 130
+- 131
+- 132
+- 133
+- 134
+- 135
+- 136
+- 137
+- 138
+- 139
+- 140
+- 141
+- 142
+- 143
+- 144
+- 145
+- 146
+#*************************************************
+#****************encoder args***************
+#*************************************************
+encoder_structure: hybrid
+encoder_depth: 4
+backbone_layers:
+- 2
+- 3
+- 7
+encoder_dim: 256
+encoder_heads: 8
+#*************************************************
+#****************decoder args***************
+#*************************************************
+num_note_tokens: 2
+num_rhythm_tokens: 260 
+num_pitch_tokens: 71
+num_lift_tokens: 7
+decoder_dim: 256
+decoder_depth: 4
+decoder_heads: 8
+decoder_args:
+  attn_on_attn: true
+  cross_attend: true
+  ff_glu: true
+  rel_pos_bias: false
+  use_scalenorm: false
