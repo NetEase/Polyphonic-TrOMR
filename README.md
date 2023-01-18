@@ -7,6 +7,7 @@ The training code will be open source later.
 Introduction
 - [Introduction](#Introduction)
 - [Dataset](#Dataset)
+- [Experiment](#Experiment)
 - [Preparation](#Preparation)
 - [Inference](#Inference)
 - [Demonstrations](#Demonstrations)
@@ -22,11 +23,21 @@ Optical score recognition (OMR) provides an intelligent and efficient way for pa
 </div>
 
 ## Dataset <a name = "Dataset"></a>
-In our Dataset, half of these images are displayed on the screen and the others are printed on paper. We take photos with a mobile phone under various conditions such as bright and dark environments, distortion, and blur.
+
+The images in MSD are electronic sheet music with clear symbols. The images in CMSD-P are printed and photographed and the symbols are rather blurred and the lines are jagged. The images in CMSD-S, taken on a screen, are slightly blurred and have a lot of moiré. Meanwhile, the effects of light and jitter are also simulated. These operations make our data very close to the real application scenarios.
 
 <div align="center">
   <a href="" rel="noopener">
  <img src="./imgs/dataset.png" width="600px" alt="Dataset"></a>
+</div>
+
+## Experiment <a name = "Experiment"></a>
+
+To facilitate direct comparison, the results of the model were visualized and the error was marked in the red box. It can be seen that TrOMR has higher recognition accuracy than baseline in areas with dense symbols and in areas further away from the staff.
+
+<div align="center">
+  <a href="" rel="noopener">
+ <img src="./imgs/Visual experimental comparison.png" width="600px" alt="Dataset"></a>
 </div>
 
 ## Preparation <a name = "Preparation"></a>
