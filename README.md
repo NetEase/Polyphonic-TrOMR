@@ -37,7 +37,7 @@ To facilitate direct comparison, the results of the model were visualized and th
 
 <div align="center">
   <a href="" rel="noopener">
- <img src="./imgs/Visual experimental.png" width="600px" alt="Dataset"></a>
+ <img src="./imgs/Visual experimental.png" width="600px" alt="Experiment"></a>
 </div>
 
 ## Preparation <a name = "Preparation"></a>
